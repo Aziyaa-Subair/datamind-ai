@@ -1,0 +1,31 @@
+Order_ID,Order_Date,Customer,Category,Product,Quantity,Unit_Price,Discount,Currency,City,Sales_Channel,Status
+ORD-1001,2026-09-01,Doha Office Supplies,Office Supplies,Laptop Stand,12,85.0,0.0,QAR,Doha,Online,Completed
+ORD-1002,2026-09-02,Pearl Electronics,Electronics,Wireless Mouse,25,45.0,50.0,QAR,Doha,Retail,Completed
+ORD-1003,2026-09-03,Gulf Home Store,Home & Kitchen,Electric Kettle,8,120.0,20.0,QAR,Al Wakrah,Online,Completed
+ORD-1004,2026-09-04,Doha Office Supplies,Office Supplies,A4 Paper Pack,40,18.5,0.0,QAR,Doha,Wholesale,Completed
+ORD-1005,2026-09-05,Pearl Electronics,Electronics,USB-C Hub,10,155.0,75.0,QAR,Lusail,Online,Completed
+ORD-1006,2026-09-06,Desert Sports,Sports,Yoga Mat,15,65.0,30.0,QAR,Doha,Retail,Completed
+ORD-1007,2026-09-07,Gulf Home Store,Home & Kitchen,Storage Box,30,22.0,15.0,QAR,Al Rayyan,Online,Completed
+ORD-1008,2026-09-08,Pearl Electronics,Electronics,Bluetooth Speaker,6,210.0,40.0,QAR,Doha,Retail,Completed
+ORD-1009,2026-09-09,Doha Office Supplies,Office Supplies,Desk Organizer,18,32.0,10.0,QAR,Lusail,Online,Completed
+ORD-1010,2026-09-10,Desert Sports,Sports,Resistance Bands,20,38.0,0.0,QAR,Al Wakrah,Wholesale,Completed
+ORD-1011,2026-09-11,Pearl Electronics,Electronics,Webcam,7,175.0,25.0,QAR,Doha,Online,Completed
+ORD-1012,2026-09-12,Gulf Home Store,Home & Kitchen,Non-stick Pan,9,95.0,15.0,QAR,Al Rayyan,Retail,Completed
+ORD-1013,2026-09-13,Doha Office Supplies,Office Supplies,Wireless Keyboard,11,110.0,35.0,QAR,Doha,Online,Completed
+ORD-1014,2026-09-14,Desert Sports,Sports,Dumbbell Set,5,240.0,60.0,QAR,Lusail,Retail,Completed
+ORD-1015,2026-09-15,Pearl Electronics,Electronics,Power Bank,14,80.0,20.0,QAR,Al Wakrah,Online,Completed
+ORD-1016,2026-09-16,Gulf Home Store,Home & Kitchen,LED Desk Lamp,13,75.0,10.0,QAR,Doha,Retail,Completed
+ORD-1017,2026-09-17,Doha Office Supplies,Office Supplies,Printer Ink,16,68.0,40.0,QAR,Al Rayyan,Wholesale,Completed
+ORD-1018,2026-09-18,Pearl Electronics,Electronics,External SSD 1TB,4,320.0,50.0,QAR,Lusail,Online,Completed
+ORD-1019,2026-09-19,Desert Sports,Sports,Skipping Rope,22,25.0,10.0,QAR,Doha,Retail,Completed
+ORD-1020,2026-09-20,Gulf Home Store,Home & Kitchen,Air Fryer,3,390.0,30.0,QAR,Al Wakrah,Online,Completed
+ORD-1021,2026-09-21,Pearl Electronics,Electronics,Monitor 24 inch,5,620.0,100.0,QAR,Doha,Retail,Completed
+ORD-1022,2026-09-22,Doha Office Supplies,Office Supplies,Notebook Pack,35,12.0,0.0,QAR,Lusail,Wholesale,Completed
+ORD-1023,2026-09-23,Desert Sports,Sports,Sports Water Bottle,18,30.0,5.0,QAR,Al Rayyan,Online,Completed
+ORD-1024,2026-09-24,Gulf Home Store,Home & Kitchen,Blender,6,185.0,25.0,QAR,Doha,Retail,Completed
+ORD-1025,2026-09-25,Pearl Electronics,Electronics,Laptop Backpack,9,145.0,45.0,QAR,Al Wakrah,Online,Completed
+ORD-1026,2026-09-26,Doha Office Supplies,Office Supplies,Stapler,28,16.0,8.0,QAR,Doha,Retail,Completed
+ORD-1027,2026-09-27,Desert Sports,Sports,Foam Roller,10,72.0,12.0,QAR,Lusail,Online,Completed
+ORD-1028,2026-09-28,Gulf Home Store,Home & Kitchen,Rice Cooker,4,260.0,35.0,QAR,Al Rayyan,Retail,Completed
+ORD-1029,2026-09-29,Pearl Electronics,Electronics,Wireless Earbuds,8,275.0,55.0,QAR,Doha,Online,Completed
+ORD-1030,2026-09-30,Doha Office Supplies,Office Supplies,Whiteboard Markers,24,14.0,0.0,QAR,Al Wakrah,Wholesale,Completed

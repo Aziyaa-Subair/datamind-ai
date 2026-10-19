@@ -5,7 +5,7 @@ from typing import Any, Callable
 import json
 import pandas as pd
 from pydantic_ai import Agent, ModelRetry, RunContext
-
+from app.services import charts
 from app import config
 from app.schemas import AnalysisResult, ToolCall
 from app.services import analysis_tools as tools
@@ -30,6 +30,9 @@ Rules:
    never describe one column's value as another measure.
 6. Never write a number that did not come from a tool result or the dataset
    profile in this conversation. If you did not call a tool, give no figures.
+7. If the user asks for a chart, graph or plot, call create_chart. Never describe a
+   chart without calling it. Then answer in one sentence saying what the chart
+   shows; the chart appears below your answer.
 """
 
 
@@ -148,6 +151,24 @@ def build_agent(model: Any = None) -> Agent[Deps, AnalysisResult]:
             ctx, "get_total_excluding_duplicates", {"column": column},
             lambda: tools.total_excluding_duplicates(ctx.deps.df, column),
         )
+    @agent.tool
+    def create_chart(
+        ctx: RunContext[Deps], chart_type: str, x: str, y: str | None = None,
+        agg: str = "sum", limit: int = 15,
+    ) -> dict:
+        """Create a chart the user will see below your answer. chart_type is
+        one of: bar, line, pie, histogram, scatter.
+        bar/pie: x = category column, y = numeric column, agg = sum/mean/median/min/max/count.
+        line: x = date column, y = numeric column (monthly totals).
+        histogram: x = numeric column (y not needed).
+        scatter: x and y = numeric columns.
+        Use a line chart for trends over time and a bar chart for comparisons."""
+        return _run_tool(
+            ctx, "create_chart",
+            {"chart_type": chart_type, "x": x, "y": y, "agg": agg, "limit": limit},
+            lambda: charts.build_chart(ctx.deps.df, chart_type, x, y, agg, limit),
+        )
+
     
     @agent.tool
     def get_monthly_trend(
