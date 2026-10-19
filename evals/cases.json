@@ -1,0 +1,94 @@
+[
+  {
+    "id": "total_revenue",
+    "question": "What is the total revenue?",
+    "expected": [
+      37950.0
+    ],
+    "expected_tool": "get_column_total"
+  },
+  {
+    "id": "top_product",
+    "question": "Which product generated the most revenue, and how much?",
+    "expected": [
+      20400.0
+    ],
+    "expected_tool": ["group_by_aggregate", "get_top_n"]
+  },
+  {
+    "id": "top_3_products",
+    "question": "What are the top 3 products by revenue?",
+    "expected": [
+      20400.0,
+      10400.0,
+      4050.0
+    ],
+    "expected_tool": "get_top_n"
+  },
+  {
+    "id": "best_category",
+    "question": "Which category performed best by revenue?",
+    "expected": [
+      32900.0
+    ],
+    "expected_tool": ["group_by_aggregate", "get_top_n"]
+  },
+  {
+    "id": "avg_quantity",
+    "question": "What is the average quantity sold per order?",
+    "expected": [
+      6.11
+    ],
+    "expected_tool": "get_column_stat"
+  },
+  {
+    "id": "max_unit_price",
+    "question": "What is the highest unit price?",
+    "expected": [
+      1200.0
+    ],
+    "expected_tool": "get_column_stat"
+  },
+  {
+    "id": "march_revenue",
+    "question": "What was the revenue in March 2025?",
+    "expected": [
+      20650.0
+    ],
+    "expected_tool": "get_monthly_trend"
+  },
+  {
+    "id": "monthly_trend",
+    "question": "Show the monthly revenue trend.",
+    "expected": [
+      9400.0,
+      7900.0,
+      20650.0
+    ],
+    "expected_tool": "get_monthly_trend"
+  },
+  {
+    "id": "row_count",
+    "question": "How many rows are in the dataset?",
+    "expected": [
+      9.0
+    ],
+    "expected_tool": "get_dataset_profile"
+  },
+  {
+    "id": "consistency",
+    "question": "Is Revenue always equal to Quantity times UnitPrice? How many rows mismatch?",
+    "expected": [
+      0.0
+    ],
+    "expected_tool": "check_revenue_consistency"
+  },
+  {
+    "id": "median_revenue",
+    "question": "What is the median revenue per order?",
+    "expected": [
+      3600.0
+    ],
+    "expected_tool": "get_column_stat"
+  }
+]

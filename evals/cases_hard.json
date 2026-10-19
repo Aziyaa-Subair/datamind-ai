@@ -1,0 +1,113 @@
+[
+  {
+    "id": "dirty_total",
+    "dataset": "sales_dirty.csv",
+    "question": "What is the total revenue?",
+    "expected": [
+      20950.0
+    ],
+    "expected_tool": "get_column_total"
+  },
+  {
+    "id": "dirty_duplicates",
+    "dataset": "sales_dirty.csv",
+    "question": "How many duplicate rows are there?",
+    "expected": [
+      1.0
+    ],
+    "expected_tool": "get_dataset_profile"
+  },
+  {
+    "id": "dirty_missing_category",
+    "dataset": "sales_dirty.csv",
+    "question": "How many rows have a missing Category?",
+    "expected": [
+      1.0
+    ],
+    "expected_tool": "get_dataset_profile"
+  },
+  {
+    "id": "dirty_mismatch_count",
+    "dataset": "sales_dirty.csv",
+    "question": "How many rows have a Revenue that differs from Quantity times UnitPrice?",
+    "expected": [
+      1.0
+    ],
+    "expected_tool": "check_revenue_consistency"
+  },
+  {
+    "id": "dirty_mismatch_values",
+    "dataset": "sales_dirty.csv",
+    "question": "For the row where Revenue does not match Quantity times UnitPrice, what was the recorded revenue and what should it have been?",
+    "expected": [
+      4500.0,
+      4000.0
+    ],
+    "expected_tool": "check_revenue_consistency"
+  },
+  {
+    "id": "dirty_best_category",
+    "dataset": "sales_dirty.csv",
+    "question": "Which category has the highest revenue, and how much?",
+    "expected": [
+      17600.0
+    ],
+    "expected_tool": [
+      "group_by_aggregate",
+      "get_top_n"
+    ]
+  },
+  {
+    "id": "dirty_top_product",
+    "dataset": "sales_dirty.csv",
+    "question": "Which product has the highest revenue, and how much?",
+    "expected": [
+      7200.0
+    ],
+    "expected_tool": [
+      "group_by_aggregate",
+      "get_top_n"
+    ]
+  },
+  {
+    "id": "dirty_march",
+    "dataset": "sales_dirty.csv",
+    "question": "What was the revenue in March 2025?",
+    "expected": [
+      10150.0
+    ],
+    "expected_tool": "get_monthly_trend"
+  },
+  {
+    "id": "dirty_mean_revenue",
+    "dataset": "sales_dirty.csv",
+    "question": "What is the average revenue per order?",
+    "expected": [
+      1745.83
+    ],
+    "expected_tool": "get_column_stat"
+  },
+  {
+    "id": "unanswerable_profit",
+    "dataset": "sales_dirty.csv",
+    "question": "What is the total profit?",
+    "expected": [],
+    "unanswerable_mention": "profit"
+  },
+  {
+    "id": "unanswerable_region",
+    "dataset": "sales_dirty.csv",
+    "question": "Show me revenue by region.",
+    "expected": [],
+    "unanswerable_mention": "region"
+  },
+  {
+    "id": "no_llm_math_dedupe",
+    "dataset": "sales_dirty.csv",
+    "question": "What is the total revenue after removing the duplicate row?",
+    "expected": [
+      19550.0
+    ],
+    "expected_tool": "get_total_excluding_duplicates"
+  }
+]

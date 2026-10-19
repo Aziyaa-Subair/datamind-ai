@@ -1,0 +1,13 @@
+OrderDate,Product,Category,Quantity,UnitPrice,Revenue
+2025-01-04,Laptop,Electronics,2,1200,2400
+2025-01-10,Phone,Electronics,3,800,2400
+2025-01-15,Desk,Furniture,2,450,900
+2025-02-02,Chair,Furniture,6,100,600
+2025-02-09,Laptop,Electronics,1,1200,1200
+2025-02-20,Monitor,Electronics,4,350,1400
+2025-02-20,Monitor,Electronics,4,350,1400
+2025-03-03,Phone,Electronics,5,800,4500
+2025-03-12,Desk,,3,450,1350
+unknown,Chair,Furniture,5,100,500
+2025-03-25,Laptop,Electronics,3,1200,3600
+2025-03-28,Monitor,Electronics,2,350,700
